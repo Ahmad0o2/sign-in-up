@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style_after.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="image/logo-r-bg.png">
+    <title>SIGN-UP</title>
+</head>
+
+<body>
+    <div class="bgcontainer">
+        <div class="bgholder">
+            <div class="bg"></div>
+        </div>
+    </div>
+    <div class="card">
+        <h1>SIGN UP</h1>
+        <form method="post" class="formline">
+            <div class="styleLabel">
+                <label for="firstname">Name <i class="fa-solid fa-user"></i></label>
+                <div class="fullname">
+                    <input class="name" id="firstname" type="text" placeholder="First name" required minlength="3">
+                    <input class="name" type="text" placeholder="Last name" required minlength="3">
+                </div>
+            </div>
+            <div class="styleLabel">
+                <label for="email">EMAIL <i class="fa-solid fa-envelope"></i></label>
+                <input id="email" type="email" placeholder="example@any.com" required>
+            </div>
+            <div class="styleLabel">
+                <label for="password">PASSWORD <i class="fa-solid fa-lock"></i></label>
+                <input id="password" type="password" placeholder="PASSWORD" required minlength="6">
+            </div>
+            <span class="check"><input type="checkbox" required> By clicking at this box you are accepting our<a
+                    href="">Terms &
+                    Conditions.</a></span>
+            <input type="submit" class="btn" value="SIGN UP">
+        </form>
+        <span class="line">already have an account ? <button class="btn flipbtn">SIGN IN</button></span>
+    </div>
+    <div class="card hide flip">
+        <h1>WELCOME BACK!</h1>
+        <form method="post">
+            <div class="styleLabel">
+                <label for="email-sign-in">EMAIL <i class="fa-solid fa-envelope"></i></label>
+                <input id="email-sign-in" type="email" placeholder="example@any.com" required>
+            </div>
+            <div class="styleLabel">
+                <label for="password-sign-in">PASSWORD <i class="fa-solid fa-lock"></i></label>
+                <div class="passcontainer">
+                    <input id="password-sign-in" type="password" placeholder="PASSWORD" required minlength="6">
+                    <i class="fa-solid fa-eye eye"></i>
+                </div>
+            </div>
+            <button class="btn signinbtn">SIGN-IN</button>
+        </form>
+        <div class="textSignIncontainer">
+            <div class="backline right"></div>
+            <span class="textSignIn">sign in with</span>
+            <div class="backline left"></div>
+        </div>
+        <div class="iconcontainer">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-apple"></i>
+            <i class="fa-brands fa-google"></i>
+        </div>
+
+        <span class="creataccount">CREAT ACCOUNT !</span>
+
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
